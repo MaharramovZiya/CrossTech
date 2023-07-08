@@ -1,0 +1,241 @@
+    body {
+        background: url(../images/headerImgs/background_two.png) no-repeat top center fixed;
+        color: #fff;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    .wrapper .header {
+        padding-top: 20px;
+    }
+    .header .header_container {
+        margin: 0 auto;
+    }
+    header .text-content {
+        margin-top: 100px;
+        height: 100%;
+    }
+    .text-content .intake_container {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .text-content .intake_container .intake_content {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .intake_content .intake_title h1 {
+        font-style: normal;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 72px;
+        margin-bottom: 30px;
+    }
+    .intake_content .aboutUs {
+        width: 70%;
+        height: 450px;
+        position: relative;
+        padding: 40px;
+        border-radius: 15px;
+        overflow: hidden;
+        color: #000;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .aboutUs::before {
+        display: block;
+        content: '';
+        width: 100%;
+        border: 0;
+        outline: 0;
+        height: 10px;
+        background-color: #0081DC;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .aboutUs::after {
+        display: block;
+        content: '';
+        width: 100%;
+        border: 0;
+        outline: 0;
+        height: 10px;
+        background-color: #0081DC;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .aboutUs p {
+        font-size: 18px;
+        padding: 20px 10px;
+        font-weight: 400;
+        color: rgb(96, 95, 95);
+    }
+    .slider {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        height: 200px !important;
+        margin-bottom: 100px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .slider::before,
+    .slider::after {
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+    .slider .slide-track {
+        -webkit-animation: scroll 15s linear infinite;
+        animation: scroll 15s linear infinite;
+        display: flex;
+        width: 3500px;
+    }
+    @media only screen and (min-width:240px) {
+        .intake_content .intake_title h1 {
+            font-size: 30px;
+        }
+
+        .aboutUs p {
+            line-height: 19px;
+            padding: 15px 0;
+            font-size: 13px;
+        }
+        .intake_content .aboutUs {
+            width: 100%;
+            height: 250px;
+            padding: 18px;
+        }
+    }
+    @media only screen and (min-width:420px) {
+        .intake_content .intake_title h1 {
+            font-size: 35px;
+        }
+        .aboutUs p {
+            line-height: 19px;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        .intake_content .aboutUs {
+            width: 90%;
+            height: 350px;
+            padding: 40px;
+            border-radius: 15px;
+            color: #000;
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+    @media only screen and (min-width:470px) {
+        .intake_content .intake_title h1 {
+            font-size: 35px;
+        }
+        .aboutUs p {
+            line-height: 21px;
+            padding: 20px 0;
+            font-size: 21px;
+        }
+    }
+    @media only screen and (min-width:600px) {
+        .intake_content .intake_title h1 {
+            font-size: 35px;
+        }
+        .aboutUs p {
+            line-height: 24px;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+    }
+    @media only screen and (min-width:740px) {
+        .intake_content .intake_title h1 {
+            font-size: 35px;
+        }
+        .aboutUs p {
+            line-height: 28px;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+    }
+    @media only screen and (min-width:992px) {
+        .intake_content .intake_title h1 {
+            font-size: 35px;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .aboutUs p {
+            line-height: 30px;
+            padding: 20px 0;
+            font-size: 28px;
+        }
+    }
+    @media only screen and (min-width:1200px) {
+        .intake_content .intake_title h1 {
+            font-size: 49px;
+        }
+        .aboutUs h1 {
+            font-size: 49px;
+        }
+        .aboutUs p {
+            line-height: 40px;
+            font-size: 29px;
+        }
+    }
+    /* Main Services */
+    .section-customers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        background-color: #fff;
+    }
+    .section-customers h2 {
+        font-size: 72px;
+        line-height: 78px;
+        font-weight: 700;
+    }
+    .section-customers p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #7B7B7B;
+        width: 500px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    @media only screen and (min-width:240px) {
+        .section-customers h2 {
+            font-size: 30px;
+            line-height: 78px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    @media only screen and (min-width:440px) {
+        .section-customers h2 {
+            font-size: 40px;
+            line-height: 78px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    @media only screen and (min-width:720px) {
+        .section-customers h2 {
+            font-size: 72px;
+            line-height: 78px;
+            font-weight: 700;
+            color: #000;
+        }
+
+    }
